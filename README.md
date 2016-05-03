@@ -11,8 +11,8 @@ Available on [Docker Hub](https://hub.docker.com/r/hatotaka/h8300-dev/).
 $ docker pull hatotaka/h8300-dev
 ```
 
-## Run
+## Make
 
 ```
-$ docker run -i -t -v $(pwd):/src hatotaka/h8300-dev bash
+$ docker run -v $(pwd):/src --rm hatotaka/h8300-dev make -C /src
 ```
